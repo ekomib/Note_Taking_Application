@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Notes - Application</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1 class="header__title">Notes Application</h1>
+        <h2 class="header__subtitle">Note taking facilitates productivity</h2>
+      </div>
+    </div>
+
+    <div class="actions">
+      <div class="actions__container">
+        <input
+          class="input"
+          id="search-text"
+          type="text"
+          placeholder="Filter notes"
+        />
+        <select class="dropdown" id="sort-items">
+          <option value="byEdited">Sort by last edited</option>
+          <option value="byAdded">Sort by last recently added</option>
+          <option value="byAlpha">Sort by alphabets</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="notes"></div>
+      <button class="button" id="create-note">Create Note</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="/scripts/notes-functions.js"></script>
+    <script src="/scripts/note-app.js" type="module"></script>
+    <script src="/scripts/date-time.js"></script>
+    <!-- <div id="practice"></div>
+    <form id="input-value">
+      <input type="text" placeholder="update input" name="inputed" />
+      <button id="update-btn">Update Format</button>
+    </form>
+    <script src="note-app.js"></script> -->
+  </body>
+</html>
+<!-- <label> <input type="checkbox" id="for-fun" />Check me for fun </label> -->
+<!-- <form id="name-form">
+      <input type="text" placeholder="First name" name="firstName" />
+      <button>Submit</button>
+    </form> -->
